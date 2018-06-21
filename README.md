@@ -1,1 +1,0 @@
-# mypridelife.github.io
