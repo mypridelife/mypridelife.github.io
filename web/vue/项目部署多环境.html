@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>项目部署多环境 | GYH</title>
+    <meta name="description" content="">
+    <link rel="icon" href="/favicon.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.c40a0e0d.css" as="style"><link rel="preload" href="/assets/js/app.26d6af3b.js" as="script"><link rel="preload" href="/assets/js/2.00cf3088.js" as="script"><link rel="preload" href="/assets/js/11.c57fc725.js" as="script"><link rel="prefetch" href="/assets/js/10.a262341b.js"><link rel="prefetch" href="/assets/js/100.a4e941af.js"><link rel="prefetch" href="/assets/js/101.831cff55.js"><link rel="prefetch" href="/assets/js/102.67c3caa3.js"><link rel="prefetch" href="/assets/js/103.0aff003d.js"><link rel="prefetch" href="/assets/js/104.114c1ac7.js"><link rel="prefetch" href="/assets/js/105.886e10ca.js"><link rel="prefetch" href="/assets/js/106.fe85263d.js"><link rel="prefetch" href="/assets/js/107.0f891995.js"><link rel="prefetch" href="/assets/js/108.2af962b3.js"><link rel="prefetch" href="/assets/js/109.8c86b9bd.js"><link rel="prefetch" href="/assets/js/110.06d41afb.js"><link rel="prefetch" href="/assets/js/111.d9a4e297.js"><link rel="prefetch" href="/assets/js/112.35ab6638.js"><link rel="prefetch" href="/assets/js/113.55c2b6ae.js"><link rel="prefetch" href="/assets/js/114.d65a1db3.js"><link rel="prefetch" href="/assets/js/115.d665169d.js"><link rel="prefetch" href="/assets/js/116.72e5a376.js"><link rel="prefetch" href="/assets/js/117.b3981757.js"><link rel="prefetch" href="/assets/js/118.af0ed274.js"><link rel="prefetch" href="/assets/js/119.0bb0770e.js"><link rel="prefetch" href="/assets/js/12.d04b6989.js"><link rel="prefetch" href="/assets/js/120.ffc53a15.js"><link rel="prefetch" href="/assets/js/121.10a919eb.js"><link rel="prefetch" href="/assets/js/122.c1fed501.js"><link rel="prefetch" href="/assets/js/123.fbc77283.js"><link rel="prefetch" href="/assets/js/124.60eb0371.js"><link rel="prefetch" href="/assets/js/125.3e23986d.js"><link rel="prefetch" href="/assets/js/126.071d83b5.js"><link rel="prefetch" href="/assets/js/13.f24d25d6.js"><link rel="prefetch" href="/assets/js/14.2e76038d.js"><link rel="prefetch" href="/assets/js/15.39272fdf.js"><link rel="prefetch" href="/assets/js/16.f04f2fe8.js"><link rel="prefetch" href="/assets/js/17.5de2eb31.js"><link rel="prefetch" href="/assets/js/18.0e5e8fc8.js"><link rel="prefetch" href="/assets/js/19.af7cdffc.js"><link rel="prefetch" href="/assets/js/20.e2f6dd18.js"><link rel="prefetch" href="/assets/js/21.e4d0596c.js"><link rel="prefetch" href="/assets/js/22.81723c36.js"><link rel="prefetch" href="/assets/js/23.e0048e2d.js"><link rel="prefetch" href="/assets/js/24.02a47a67.js"><link rel="prefetch" href="/assets/js/25.9e4e774f.js"><link rel="prefetch" href="/assets/js/26.7c47574f.js"><link rel="prefetch" href="/assets/js/27.acf2411d.js"><link rel="prefetch" href="/assets/js/28.6a5883b3.js"><link rel="prefetch" href="/assets/js/29.7e0d4f8a.js"><link rel="prefetch" href="/assets/js/3.736f99a0.js"><link rel="prefetch" href="/assets/js/30.40ad1a6e.js"><link rel="prefetch" href="/assets/js/31.11db72aa.js"><link rel="prefetch" href="/assets/js/32.a3762ea9.js"><link rel="prefetch" href="/assets/js/33.f80576a2.js"><link rel="prefetch" href="/assets/js/34.9f1d44f6.js"><link rel="prefetch" href="/assets/js/35.8dc5840b.js"><link rel="prefetch" href="/assets/js/36.ec1b6948.js"><link rel="prefetch" href="/assets/js/37.95ce8d97.js"><link rel="prefetch" href="/assets/js/38.64ce6000.js"><link rel="prefetch" href="/assets/js/39.815c5d74.js"><link rel="prefetch" href="/assets/js/4.b17fcf3a.js"><link rel="prefetch" href="/assets/js/40.3e52e6ee.js"><link rel="prefetch" href="/assets/js/41.fbb037e6.js"><link rel="prefetch" href="/assets/js/42.d3bedcad.js"><link rel="prefetch" href="/assets/js/43.284f51d1.js"><link rel="prefetch" href="/assets/js/44.e3b8956d.js"><link rel="prefetch" href="/assets/js/45.2339a2d2.js"><link rel="prefetch" href="/assets/js/46.3126bb58.js"><link rel="prefetch" href="/assets/js/47.5935ac5e.js"><link rel="prefetch" href="/assets/js/48.3c0af11b.js"><link rel="prefetch" href="/assets/js/49.c38ae851.js"><link rel="prefetch" href="/assets/js/5.f55fa3a2.js"><link rel="prefetch" href="/assets/js/50.dabe0282.js"><link rel="prefetch" href="/assets/js/51.efbd4715.js"><link rel="prefetch" href="/assets/js/52.4761482c.js"><link rel="prefetch" href="/assets/js/53.144e2450.js"><link rel="prefetch" href="/assets/js/54.42fba41f.js"><link rel="prefetch" href="/assets/js/55.c3bd59a9.js"><link rel="prefetch" href="/assets/js/56.42857634.js"><link rel="prefetch" href="/assets/js/57.c0cfeced.js"><link rel="prefetch" href="/assets/js/58.d70da404.js"><link rel="prefetch" href="/assets/js/59.b55c9311.js"><link rel="prefetch" href="/assets/js/6.58090db5.js"><link rel="prefetch" href="/assets/js/60.0c01e31d.js"><link rel="prefetch" href="/assets/js/61.99b8fc70.js"><link rel="prefetch" href="/assets/js/62.e3d9b3af.js"><link rel="prefetch" href="/assets/js/63.74ff3b32.js"><link rel="prefetch" href="/assets/js/64.22ee6550.js"><link rel="prefetch" href="/assets/js/65.c6bc943a.js"><link rel="prefetch" href="/assets/js/66.723ffa4b.js"><link rel="prefetch" href="/assets/js/67.e085a43d.js"><link rel="prefetch" href="/assets/js/68.abcd5bf2.js"><link rel="prefetch" href="/assets/js/69.40648e89.js"><link rel="prefetch" href="/assets/js/7.22acda5e.js"><link rel="prefetch" href="/assets/js/70.74a15283.js"><link rel="prefetch" href="/assets/js/71.38e8e42a.js"><link rel="prefetch" href="/assets/js/72.ab98ae51.js"><link rel="prefetch" href="/assets/js/73.78727821.js"><link rel="prefetch" href="/assets/js/74.74fafe86.js"><link rel="prefetch" href="/assets/js/75.31e7610c.js"><link rel="prefetch" href="/assets/js/76.692d88dc.js"><link rel="prefetch" href="/assets/js/77.a14c2c2a.js"><link rel="prefetch" href="/assets/js/78.9a07072b.js"><link rel="prefetch" href="/assets/js/79.964d02e8.js"><link rel="prefetch" href="/assets/js/8.ee754d41.js"><link rel="prefetch" href="/assets/js/80.b9f46bb2.js"><link rel="prefetch" href="/assets/js/81.f5487bf7.js"><link rel="prefetch" href="/assets/js/82.a49b400f.js"><link rel="prefetch" href="/assets/js/83.798f79df.js"><link rel="prefetch" href="/assets/js/84.abe8ea21.js"><link rel="prefetch" href="/assets/js/85.b65facaa.js"><link rel="prefetch" href="/assets/js/86.936f5b4b.js"><link rel="prefetch" href="/assets/js/87.d5b9f5c1.js"><link rel="prefetch" href="/assets/js/88.59f201a4.js"><link rel="prefetch" href="/assets/js/89.d8f53ffa.js"><link rel="prefetch" href="/assets/js/9.7604f4e2.js"><link rel="prefetch" href="/assets/js/90.5e49c906.js"><link rel="prefetch" href="/assets/js/91.3a61f3af.js"><link rel="prefetch" href="/assets/js/92.3382c6af.js"><link rel="prefetch" href="/assets/js/93.453eae8a.js"><link rel="prefetch" href="/assets/js/94.7c3c06b0.js"><link rel="prefetch" href="/assets/js/95.bc60de66.js"><link rel="prefetch" href="/assets/js/96.25e18f57.js"><link rel="prefetch" href="/assets/js/97.b92ceb71.js"><link rel="prefetch" href="/assets/js/98.0d166e3c.js"><link rel="prefetch" href="/assets/js/99.df0c3769.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c40a0e0d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GYH</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/javascript/JavaScript浮点数运算的精度问题.html" class="nav-link">js</a></li><li class="dropdown-item"><!----> <a href="/web/css/移动端适配.html" class="nav-link">css</a></li><li class="dropdown-item"><!----> <a href="/web/vue/vue-element-admin.html" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/web/others/骚操作.html" class="nav-link">其他</a></li></ul></div></div><div class="nav-item"><a href="/server/" class="nav-link">服务端</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">数据结构</a></div><div class="nav-item"><a href="/standard/" class="nav-link">代码规范</a></div><div class="nav-item"><a href="/utils/" class="nav-link">工具</a></div><div class="nav-item"><a href="/article/" class="nav-link">笔记</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/javascript/JavaScript浮点数运算的精度问题.html" class="nav-link">js</a></li><li class="dropdown-item"><!----> <a href="/web/css/移动端适配.html" class="nav-link">css</a></li><li class="dropdown-item"><!----> <a href="/web/vue/vue-element-admin.html" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/web/others/骚操作.html" class="nav-link">其他</a></li></ul></div></div><div class="nav-item"><a href="/server/" class="nav-link">服务端</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">数据结构</a></div><div class="nav-item"><a href="/standard/" class="nav-link">代码规范</a></div><div class="nav-item"><a href="/utils/" class="nav-link">工具</a></div><div class="nav-item"><a href="/article/" class="nav-link">笔记</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Javascript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/javascript/AES和Base64加解密.html" class="sidebar-link">AES 和 Base64 加解密</a></li><li><a href="/web/javascript/base64转二进制数组ArrayBuffer.html" class="sidebar-link">base64 转二进制数组 ArrayBuffer</a></li><li><a href="/web/javascript/byte转换.html" class="sidebar-link">byte 转换</a></li><li><a href="/web/javascript/common.js.html" class="sidebar-link">common.js</a></li><li><a href="/web/javascript/JavaScript浮点数运算的精度问题.html" class="sidebar-link">JavaScript 浮点数运算的精度问题</a></li><li><a href="/web/javascript/JS事件循环机制.html" class="sidebar-link">JS 事件循环机制</a></li><li><a href="/web/javascript/js常用函数.html" class="sidebar-link">js 常用函数</a></li><li><a href="/web/javascript/VUE首屏加载速度优化.html" class="sidebar-link">VUE 首屏加载速度优化</a></li><li><a href="/web/javascript/关于this.html" class="sidebar-link">关于this</a></li><li><a href="/web/javascript/实现一个深克隆.html" class="sidebar-link">实现一个深克隆</a></li><li><a href="/web/javascript/获取页面元素宽高.html" class="sidebar-link">获取页面和元素的宽高</a></li><li><a href="/web/javascript/视频播放相关.html" class="sidebar-link">视频播放</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/css/1px方案.html" class="sidebar-link">1px方案</a></li><li><a href="/web/css/CSS中几种常用的居中.html" class="sidebar-link">CSS 中几种常用的居中</a></li><li><a href="/web/css/tailwind.html" class="sidebar-link">tailwind</a></li><li><a href="/web/css/用div画三角.html" class="sidebar-link">用 div 画三角</a></li><li><a href="/web/css/移动端适配.html" class="sidebar-link">移动端适配</a></li><li><a href="/web/css/移动端适配2.html" class="sidebar-link">移动端适配(新)</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VUE</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/vue/i18n.html" class="sidebar-link">使用 vue-i18n 切换中英文</a></li><li><a href="/web/vue/svg在vue中以及在vux组件库中的使用.html" class="sidebar-link">svg 在 vue 中以及在 vux 组件库中的使用</a></li><li><a href="/web/vue/vue-element-admin.html" class="sidebar-link">vue-admin 使用</a></li><li><a href="/web/vue/vue中引入第三方库.html" class="sidebar-link">vue 项目中如何引入第三方库</a></li><li><a href="/web/vue/vue中路由跳转query与params.html" class="sidebar-link">vue 中路由跳转 query 与 params</a></li><li><a href="/web/vue/vue定义全局方法.html" class="sidebar-link">vue 定义全局方法</a></li><li><a href="/web/vue/VUE实现局部刷新.html" class="sidebar-link">VUE 实现局部刷新</a></li><li><a href="/web/vue/VUE笔记.html" class="sidebar-link">VUE笔记</a></li><li><a href="/web/vue/实现一个极简版的双向绑定.html" class="sidebar-link">实现一个极简版的双向绑定</a></li><li><a href="/web/vue/项目部署多环境.html" class="active sidebar-link">项目部署多环境</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/vue/项目部署多环境.html#_1-前端-管理端" class="sidebar-link">1. 前端-管理端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/vue/项目部署多环境.html#_1-1-环境区分" class="sidebar-link">1.1 环境区分</a></li></ul></li><li class="sidebar-sub-header"><a href="/web/vue/项目部署多环境.html#_2-前端-手机端" class="sidebar-link">2. 前端-手机端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/vue/项目部署多环境.html#_2-1-环境区分" class="sidebar-link">2.1 环境区分</a></li><li class="sidebar-sub-header"><a href="/web/vue/项目部署多环境.html#_2-2-钉钉登录" class="sidebar-link">2.2 钉钉登录</a></li></ul></li><li class="sidebar-sub-header"><a href="/web/vue/项目部署多环境.html#_3-小程序" class="sidebar-link">3. 小程序</a></li><li class="sidebar-sub-header"><a href="/web/vue/项目部署多环境.html#后端" class="sidebar-link">后端</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>其他</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/others/flutter父子组件通信.html" class="sidebar-link">flutter 父子组件通信</a></li><li><a href="/web/others/github表情.html" class="sidebar-link">github 表情</a></li><li><a href="/web/others/h5与原生app交互的原理.html" class="sidebar-link">h5 与原生 app 交互的原理</a></li><li><a href="/web/others/resolve.html" class="sidebar-link">resolve</a></li><li><a href="/web/others/vscode同步设置.html" class="sidebar-link">vscode 同步设置</a></li><li><a href="/web/others/wepy子组件未更新的问题.html" class="sidebar-link">wepy 子组件未更新的问题</a></li><li><a href="/web/others/__dirname.html" class="sidebar-link">__dirname</a></li><li><a href="/web/others/技巧.html" class="sidebar-link">技巧(不再更新，新内容移动到骚操作中)</a></li><li><a href="/web/others/钉钉手机网页应用更改标题栏.html" class="sidebar-link">钉钉手机网页应用更改标题栏</a></li><li><a href="/web/others/需要调用钉钉的api时如何调试页面.html" class="sidebar-link">需要调用钉钉的 api 时如何调试页面</a></li><li><a href="/web/others/骚操作.html" class="sidebar-link">骚操作</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="项目部署多环境"><a href="#项目部署多环境" class="header-anchor">#</a> 项目部署多环境</h1> <p>背景：之前项目都是在本地开发，迭代到日常环境，一次次的迭代之后，要发布到预发和正式，才有了此文。</p> <p>文章结构：
+<img src="data:image/png;base64,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" alt="文章结构"></p> <h2 id="_1-前端-管理端"><a href="#_1-前端-管理端" class="header-anchor">#</a> 1. 前端-管理端</h2> <p>以下内容基于 cli2.0</p> <h3 id="_1-1-环境区分"><a href="#_1-1-环境区分" class="header-anchor">#</a> 1.1 环境区分</h3> <h4 id="_1-1-1-axios-的封装"><a href="#_1-1-1-axios-的封装" class="header-anchor">#</a> 1.1.1 axios 的封装</h4> <p>talk is cheap this is the code：</p> <p>文件：@/utils/request.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import axios from 'axios'
+import store from '@/store'
+import { getToken } from '@/utils/auth'
+import Cookies from 'js-cookie'
+
+// create an axios instance
+const service = axios.create({
+  baseURL: process.env.BASE_API, // api 的 base_url
+  timeout: 5000 // request timeout
+  // withCredentials: true
+})
+
+// request interceptor
+service.interceptors.request.use(
+  config =&gt; {
+    // Do something before request is sent
+    if (window.localStorage.getItem('token')) {
+    // 让每个请求携带token-- ['X-Token']为自定义key 请根据实际情况自行修改
+      config.headers['X-Token'] = window.localStorage.getItem('token')
+    }
+    // if (Cookies.get('_traceid_')) {
+    //   config.headers['X-Trace'] = Cookies.get('_traceid_')
+    // }
+    return config
+  },
+  error =&gt; {
+    // Do something with request error
+    console.log(error) // for debug
+    Promise.reject(error)
+  }
+)
+
+// response interceptor
+service.interceptors.response.use(
+  response =&gt; response,
+  /**
+   * 下面的注释为通过在response里，自定义code来标示请求状态
+   * 当code返回如下情况则说明权限有问题，登出并返回到登录页
+   * 如想通过 xmlhttprequest 来状态码标识 逻辑可写在下面error中
+   * 以下代码均为样例，请结合自生需求加以修改，若不需要，则可删除
+   */
+  // response =&gt; {
+  //   const res = response.data
+  //   if (res.code !== 20000) {
+  //     Message({
+  //       message: res.message,
+  //       type: 'error',
+  //       duration: 5 * 1000
+  //     })
+  //     // 50008:非法的token; 50012:其他客户端登录了;  50014:Token 过期了;
+  //     if (res.code === 50008 || res.code === 50012 || res.code === 50014) {
+  //       // 请自行在引入 MessageBox
+  //       // import { Message, MessageBox } from 'element-ui'
+  //       MessageBox.confirm('你已被登出，可以取消继续留在该页面，或者重新登录', '确定登出', {
+  //         confirmButtonText: '重新登录',
+  //         cancelButtonText: '取消',
+  //         type: 'warning'
+  //       }).then(() =&gt; {
+  //         store.dispatch('FedLogOut').then(() =&gt; {
+  //           location.reload() // 为了重新实例化vue-router对象 避免bug
+  //         })
+  //       })
+  //     }
+  //     return Promise.reject('error')
+  //   } else {
+  //     return response.data
+  //   }
+  // },
+  error =&gt; {
+    console.log('err' + error) // for debug
+    return Promise.reject(error)
+  }
+)
+
+export default service
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br></div></div><p>注释已经很清楚了，一句话来说就是封装了一个 axios 请求。最重要的三部分：</p> <ul><li>请求拦截</li> <li>响应拦截</li> <li>基础的 api_url</li></ul> <p>之后我们在统一在一个 api 的文件夹中书写请求，像这样：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import request from '@/utils/request'
+
+export function loginByUsername(username, password) {
+  const data = {
+    username,
+    password
+  }
+  return request({
+    url: '/login/login',
+    method: 'post',
+    data
+  })
+}
+
+export function logout() {
+  return request({
+    url: '/login/logout',
+    method: 'post'
+  })
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h4 id="_2-1-2-构建"><a href="#_2-1-2-构建" class="header-anchor">#</a> 2.1.2 构建</h4> <p>要确定安装了 cross-env</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install cross-env
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>1、先准备三个环境的文件，分别为：</p> <ul><li>dev.env.js //日常环境</li> <li>pre.env.js // 预发环境</li> <li>prod.env.js //生产环境</li></ul> <p>内容为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>'use strict'
+module.exports = {
+  NODE_ENV: '&quot;production&quot;',
+  ENV_CONFIG: '&quot;prod&quot;',
+  BASE_API: '&quot;https://api.yoururl.com&quot;'	//填你的base_api
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>2、之后我们在 webpack.prod.conf.js 中配置一下 env：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const env = require('../config/' + process.env.env_config + '.env')
+console.log(env) //可以打印一下看看是否出错
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>plugins 中的内容不变：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>new webpack.DefinePlugin({
+      'process.env': env
+}),
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>3、这样配置就结束了，我们还需要设置一下打包的命令，在 package.json 中：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;build:prod&quot;: &quot;cross-env NODE_ENV=production env_config=prod node build/build.js&quot;,
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>打开终端，输入命令 npm run build:prod 来测试一下吧</p> <h2 id="_2-前端-手机端"><a href="#_2-前端-手机端" class="header-anchor">#</a> 2. 前端-手机端</h2> <h3 id="_2-1-环境区分"><a href="#_2-1-环境区分" class="header-anchor">#</a> 2.1 环境区分</h3> <p>同上管理端，不再累述。</p> <h3 id="_2-2-钉钉登录"><a href="#_2-2-钉钉登录" class="header-anchor">#</a> 2.2 钉钉登录</h3> <h4 id="_2-2-1-ddlogin-html-页面"><a href="#_2-2-1-ddlogin-html-页面" class="header-anchor">#</a> 2.2.1 ddlogin.html 页面</h4> <p>钉钉免登是一个单独的页面，我们放在根目录下面，ddlogin.html。</p> <p>需要后端配合写两个接口，代码注释中有。具体后端内容参考钉钉开发者文档。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+    &lt;meta charset=&quot;gbk&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
+    &lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot; /&gt;
+    &lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot; /&gt;
+    &lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot; /&gt;
+    &lt;meta content=&quot;yes&quot; name=&quot;apple-touch-fullscreen&quot; /&gt;
+    &lt;meta
+      name=&quot;viewport&quot;
+      content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no&quot;
+    /&gt;
+    &lt;meta
+      name=&quot;viewport&quot;
+      content=&quot;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0&quot;
+    /&gt;
+
+    &lt;title&gt;加载中...&lt;/title&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/static/js/zepto.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script
+      type=&quot;text/javascript&quot;
+      src=&quot;https://g.alicdn.com/dingding/open-develop/1.6.9/dingtalk.js&quot;
+    &gt;&lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+       var host = &lt;%=htmlWebpackPlugin.options.ddloginapi %&gt;;
+       var configURL = host + '/dingding/config';//获取配置
+       var loginURL = host + '/dingding/login';//登录
+
+
+      $(function() {
+        // alert(&quot;111&quot;);
+        function getConfig(callback) {
+          $.ajax({
+            url: configURL,
+            type: &quot;get&quot;,
+            data: {
+              url: location.href
+            },
+            success: function(data, status, xhr) {
+              callback(data);
+            },
+            error: function(xhr, errorType, error) {
+              console.log(error);
+            }
+          });
+        }
+
+        getConfig(function(data) {
+          var _config = data;
+
+          dd.config({
+            agentId: _config.agentid,
+            corpId: _config.corpId,
+            timeStamp: _config.timeStamp,
+            nonceStr: _config.nonceStr,
+            signature: _config.signature,
+            jsApiList: [
+              &quot;runtime.info&quot;,
+              &quot;biz.contact.choose&quot;,
+              &quot;device.notification.confirm&quot;,
+              &quot;device.notification.alert&quot;,
+              &quot;device.notification.prompt&quot;,
+              &quot;biz.ding.post&quot;,
+              &quot;biz.util.openLink&quot;
+            ]
+          });
+
+          dd.ready(function() {
+            dd.runtime.permission.requestAuthCode({
+              corpId: _config.corpId,
+              onSuccess: function(info) {
+                $.ajax({
+                  url: loginURL,
+                  data: {
+                    code: info.code
+                  },
+                  type: &quot;POST&quot;,
+                  success: function(data, status, xhr) {
+                    if (data.success) {
+                      window.localStorage.setItem(
+                        &quot;userName&quot;,
+                        data.sysUser.name
+                      );
+                      window.localStorage.setItem(&quot;userId&quot;, data.sysUser.id);
+                      window.localStorage.setItem(&quot;token&quot;, data.token);
+                      location.href = '/?rand='+Math.random();
+                    } else {
+                      alert(&quot;登录失败&quot;);
+                    }
+                  },
+                  error: function(xhr, errorType, error) {
+                    alert(&quot;login error&quot;);
+                  }
+                });
+              },
+              onFail: function(err) {
+                alert(&quot;onfail&quot; + JSON.stringify(err));
+              }
+            });
+          });
+
+          dd.error(function(err) {
+            alert(&quot;dd error: &quot; + JSON.stringify(err));
+          });
+        });
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br></div></div><h4 id="_2-2-2-页面中的环境区分"><a href="#_2-2-2-页面中的环境区分" class="header-anchor">#</a> 2.2.2 页面中的环境区分</h4> <p>由于这个免登页面是个单页面，所以我们单独拿出来区分一下环境。做法是把域名抽离出来，通过 htmlWebpackPlugin 来获取到值。页面代码中：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var host = &lt;%=htmlWebpackPlugin.options.ddloginapi %&gt;;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>接下来是需要我们配置的。在 webpack.prod.conf.js 中</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>new HtmlWebpackPlugin({
+      filename: config.build.ddlogin,
+      template: 'ddlogin.html',
+      inject: false,
+      title: '加载中...',
+      ddloginapi: env.BASE_API, //根据不同的BASE_API获取到值
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+      }
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="_3-小程序"><a href="#_3-小程序" class="header-anchor">#</a> 3. 小程序</h2> <p>小程序三个版本分别对应为：</p> <p>envVersion: 'develop', //开发版</p> <p>envVersion: 'trial', //体验版</p> <p>envVersion: 'release', //正式版</p> <p>所以可通过以下代码来区分环境。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function version(){
+  console.log('envVersion', __wxConfig.envVersion);
+  let version = __wxConfig.envVersion;
+  switch (version)
+  {
+    case 'develop':
+      return 'https://测试版环境域名';
+      break;
+    case 'trial':
+      return 'https://体验版环境域名';
+      break;
+    case 'release':
+      return 'https://线上环境域名';
+      break;
+    default:
+      return 'https://测试版环境域名';
+  }
+}
+
+//调用
+version();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p><strong>一个示例</strong></p> <p>在根目录下创建 config.js，内容为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let host = version();
+
+function version() {
+  console.log('envVersion', __wxConfig.envVersion);
+  let version = __wxConfig.envVersion;
+  switch (version) {
+    case 'develop':
+      return 'https://dev-cod-api.hzhengji.cn';
+      break;
+    case 'trial':
+      return 'https://pre-cod-api.hzhengji.cn';
+      break;
+    case 'release':
+      return 'https://cod-api.hzhengji.cn';
+      break;
+    default:
+      return 'https://dev-cod-api.hzhengji.cn';
+  }
+}
+
+let config = {
+    host,
+    login: `${host}/wechat/login`,	//登录
+    upload: `${host}/answer/head/upload`,	//上传到oss
+};
+module.exports = config;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h2 id="后端"><a href="#后端" class="header-anchor">#</a> 后端</h2> <p>后端使用的是 springboot，分离环境比较简单，三个配置文件 active 一下就可以了，不再累述。网上一搜一大把。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/vue/实现一个极简版的双向绑定.html" class="prev">实现一个极简版的双向绑定</a></span> <span class="next"><a href="/web/others/flutter父子组件通信.html">flutter 父子组件通信</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.26d6af3b.js" defer></script><script src="/assets/js/2.00cf3088.js" defer></script><script src="/assets/js/11.c57fc725.js" defer></script>
+  </body>
+</html>
