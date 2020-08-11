@@ -1,0 +1,8 @@
+.DS_Store
+build/*
+!build/icons
+package-lock.json
+node_modules/
+thumbs.db
+!.gitkeep
+docs/.vuepress/dist/

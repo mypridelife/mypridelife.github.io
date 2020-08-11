@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "gen": "bash generate.sh",
+    "build": "vuepress build docs",
+    "deploy_github": "bash deploy_github.sh"
+  },
+  "dependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
