@@ -1,4 +1,4 @@
-var fs = require("fs");
+var fs = require("fs")
 
 const oldData = `  module.exports = {
         title: "GYH",
@@ -44,62 +44,56 @@ const oldData = `  module.exports = {
             },
             sidebarDepth: 2
         }
-    };`;
+    };`
 function getFileArr(directory) {
-  let wenjianjia = [];
-  const files = fs.readdirSync("./docs" + directory);
+  let wenjianjia = []
+  const files = fs.readdirSync("./docs" + directory)
   for (let i = 0; i < files.length; i++) {
-    let filename = files[i];
-    wenjianjia.push(`${directory}/${filename}`);
+    let filename = files[i]
+    wenjianjia.push(`${directory}/${filename}`)
   }
-  return wenjianjia;
+  return wenjianjia
 }
 function wirteFileArr(newData) {
   //   var oldData = fs.readFileSync("./docs/.vuepress/config.js", "utf8");
-  fs.writeFileSync("./docs/.vuepress/config.js", newData + oldData);
+  fs.writeFileSync("./docs/.vuepress/config.js", newData + oldData)
 }
 function generate() {
-  let javascript = getFileArr("/web/javascript");
-  javascript = "const javascript=" + JSON.stringify(javascript) + "\n";
+  console.log("generate menu...")
 
-  let css = getFileArr("/web/css");
-  css = "const css=" + JSON.stringify(css) + "\n";
+  let javascript = getFileArr("/web/javascript")
+  javascript = "const javascript=" + JSON.stringify(javascript) + "\n"
 
-  let vue = getFileArr("/web/vue");
-  vue = "const vue=" + JSON.stringify(vue) + "\n";
+  let css = getFileArr("/web/css")
+  css = "const css=" + JSON.stringify(css) + "\n"
 
-  let others = getFileArr("/web/others");
-  others = "const others=" + JSON.stringify(others) + "\n";
+  let vue = getFileArr("/web/vue")
+  vue = "const vue=" + JSON.stringify(vue) + "\n"
 
-  let server = getFileArr("/server/server");
-  server = "const server=" + JSON.stringify(server) + "\n";
+  let others = getFileArr("/web/others")
+  others = "const others=" + JSON.stringify(others) + "\n"
 
-  let algorithm = getFileArr("/algorithm/algorithm");
-  algorithm = "const algorithm=" + JSON.stringify(algorithm) + "\n";
+  let server = getFileArr("/server/server")
+  server = "const server=" + JSON.stringify(server) + "\n"
 
-  let standard = getFileArr("/standard/standard");
-  standard = "const standard=" + JSON.stringify(standard) + "\n";
+  let algorithm = getFileArr("/algorithm/algorithm")
+  algorithm = "const algorithm=" + JSON.stringify(algorithm) + "\n"
 
-  let utils = getFileArr("/utils/utils");
-  utils = "const utils=" + JSON.stringify(utils) + "\n";
+  let standard = getFileArr("/standard/standard")
+  standard = "const standard=" + JSON.stringify(standard) + "\n"
 
-  let youth = getFileArr("/youth/youth");
-  youth = "const youth=" + JSON.stringify(youth) + "\n";
+  let utils = getFileArr("/utils/utils")
+  utils = "const utils=" + JSON.stringify(utils) + "\n"
 
-  let article = getFileArr("/article/article");
-  article = "const article=" + JSON.stringify(article) + "\n";
+  let youth = getFileArr("/youth/youth")
+  youth = "const youth=" + JSON.stringify(youth) + "\n"
+
+  let article = getFileArr("/article/article")
+  article = "const article=" + JSON.stringify(article) + "\n"
 
   const newDate =
-    javascript +
-    css +
-    vue +
-    others +
-    server +
-    algorithm +
-    standard +
-    utils +
-    article +
-    youth;
-  wirteFileArr(newDate);
+    javascript + css + vue + others + server + algorithm + standard + utils + article + youth
+  wirteFileArr(newDate)
+  console.log("generate finish...")
 }
-generate();
+generate()
