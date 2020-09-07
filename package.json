@@ -1,11 +1,16 @@
 {
+  "author": "gyh",
+  "license": "BSD-2-Clause",
   "scripts": {
+    "predev": "node file.js",
     "dev": "vuepress dev docs",
-    "gen": "bash generate.sh",
-    "build": "vuepress build docs",
-    "deploy_github": "bash deploy_github.sh"
+    "prebuild": "node file.js",
+    "build": "vuepress build docs"
   },
   "dependencies": {
     "vuepress": "^1.5.3"
+  },
+  "devDependencies": {
+    "vuepress-plugin-comment": "^0.7.3"
   }
 }

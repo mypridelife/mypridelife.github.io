@@ -43,7 +43,22 @@ const oldData = `  module.exports = {
                 "/": []
             },
             sidebarDepth: 2
-        }
+        },
+        plugins: [
+            [
+              'vuepress-plugin-comment',
+              {
+                choosen: 'valine', 
+                options: {
+                  el: '#valine-vuepress-comment',
+                  appId: 'vYkETROVb1A9jGlh7mCKbgBd-gzGzoHsz',
+                  appKey: 'PTCmTLoNHVT2Lz99HJlVQUCJ',
+                  placeholder: '骚年，你有啥想说的~',
+                  path: '<%- frontmatter.to.path ? "/" + frontmatter.to.path : window.location.pathname %>'
+                }
+              }
+            ]
+        ]
     };`
 function getFileArr(directory) {
   let wenjianjia = []
