@@ -36,7 +36,6 @@ const oldData = `module.exports = {
                     { collapsable: false, title: "Algorithm", children: algorithm }
                 ],
                 "/utils/": [{ collapsable: false, title: "Utils", children: utils }],
-                "/youth/": [{ collapsable: false, title: "Youth", children: youth }],
                 "/standard/": [
                     { collapsable: false, title: "Standard", children: standard }
                 ],
@@ -71,7 +70,6 @@ function getFileArr(directory) {
   return wenjianjia
 }
 function wirteFileArr(newData) {
-  //   var oldData = fs.readFileSync("./docs/.vuepress/config.js", "utf8");
   fs.writeFileSync("./docs/.vuepress/config.js", newData + oldData)
 }
 function generate() {
@@ -101,14 +99,10 @@ function generate() {
   let utils = getFileArr("/utils/utils")
   utils = "const utils=" + JSON.stringify(utils) + "\n"
 
-  let youth = getFileArr("/youth/youth")
-  youth = "const youth=" + JSON.stringify(youth) + "\n"
-
   let article = getFileArr("/article/article")
   article = "const article=" + JSON.stringify(article) + "\n"
 
-  const newDate =
-    javascript + css + vue + others + server + algorithm + standard + utils + article + youth
+  const newDate = javascript + css + vue + others + server + algorithm + standard + utils + article
   wirteFileArr(newDate)
   console.log("generate finish...")
 }
