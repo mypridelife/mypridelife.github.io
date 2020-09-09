@@ -13,3 +13,14 @@ features:
     details: 而他们的情感、友谊和操守，在我眼中仍完全是一种奇迹，是恩惠的完全表现。
 footer: BSD Licensed | Copyright © 2020-present gyh
 ---
+
+<script>
+export default {
+  mounted () {
+    var element = document.querySelector(".footer-wrapper")
+    if (element) {
+        element.parentNode.removeChild(element)
+    }
+  }
+}
+</script>
