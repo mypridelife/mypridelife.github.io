@@ -3,7 +3,6 @@
   "license": "BSD-2-Clause",
   "scripts": {
     "dev": "vuepress dev docs",
-    "prebuild": "node file.js",
     "build": "vuepress build docs"
   },
   "dependencies": {
