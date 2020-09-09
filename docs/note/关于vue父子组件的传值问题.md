@@ -1,6 +1,6 @@
 ---
 title: 关于vue父子组件的传值问题
-#date: 2020-09-09
+date: 2020-09-09
 #sidebar: 'auto'
 categories:
   - JavaScript

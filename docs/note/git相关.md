@@ -1,27 +1,67 @@
 ---
-title: github 表情
-date: 2018-09-09
+title: git相关
+date: 2020-09-09
 #sidebar: 'auto'
 categories:
-  - Others
-#tags:
-#  - css
+  - Note
+  - Git
+tags:
+  - git
 #keys:
 #  - 'vue'
 #publish: true
 ---
 
-## 在 commit 时添加一个 emoji 表情图标
+## 常用 git 命令
+
+```
+# 设置邮箱
+git config --global user.email "张三的邮箱地址"
+# 设置用户名
+git config --global user.name "张三"
+# 生成公钥（一路回车）
+ssh-keygen -t rsa
+cd ~/.ssh
+cat id_rsa.pub
+
+Git 管理的文件分为：工作区，版本库，版本库又分为暂存区 stage 和暂存区分支 master(仓库)
+
+工作区>>>>暂存区>>>>仓库
+
+git add 把文件从工作区>>>>暂存区，git commit 把文件从暂存区>>>>仓库，
+
+git diff 查看工作区和暂存区差异，git diff --cached 查看暂存区和仓库差异，git diff HEAD 查看工作区和仓库的差异，
+
+git add 的反向命令 git checkout，撤销工作区修改，即把暂存区最新版本转移到工作区，
+
+git commit 的反向命令 git reset –-soft，就是把仓库最新版本转移到暂存区。
+
+git revert 反向操作某一条记录
+
+git tag v0.9 f52c633 / git tag -d v0.9 / git push origin :refs/tags/v0.9 打 tag
+
+git log git reflog 查看 log/查看所有 log
+
+git commit –amend 修改 commit 信息
+
+git cherry-pick 合并某个 commit
+```
+
+## 表情
+
+### 在 commit 时添加一个 emoji 表情图标
 
 ```git
 git commit -m ':emoji: 此次提交的内容说明'
 ```
 
-## 添加多个 emoji 表情图标
+### 添加多个 emoji 表情图标
 
 ```git
 git commit -m ':emoji1: :emoji2: :emoji3: 此次提交的内容说明'
 ```
+
+### 表情列表
 
 在提交内容的前面增加了 emoji 标签： **:emoji:**，其中 emoji 是表情图标的标签，列表见下面的附录表格。
 
@@ -57,7 +97,3 @@ git commit -m ':emoji1: :emoji2: :emoji3: 此次提交的内容说明'
 | :wrench: (扳手)                         | `:wrench:`                   | 修改配置文件          |
 | :globe_with_meridians: (地球)           | `:globe_with_meridians:`     | 国际化与本地化        |
 | :pencil2: (铅笔)                        | `:pencil2:`                  | 修复 typo             |
-
-参考资料 :
-
-- https://gitmoji.carloscuesta.me/
