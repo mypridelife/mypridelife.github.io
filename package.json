@@ -2,7 +2,6 @@
   "author": "gyh",
   "license": "BSD-2-Clause",
   "scripts": {
-    "predev": "node file.js",
     "dev": "vuepress dev docs",
     "prebuild": "node file.js",
     "build": "vuepress build docs"
