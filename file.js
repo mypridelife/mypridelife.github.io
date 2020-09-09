@@ -1,10 +1,11 @@
 var fs = require("fs")
 
-const oldData = `  module.exports = {
+const oldData = `module.exports = {
         title: "GYH",
         head: [["link", { rel: "icon", href: "/favicon.jpg" }]],
         base: "/",
         markdown: { lineNumbers: true },
+        theme: 'reco',
         themeConfig: {
             nav: [
                 {
