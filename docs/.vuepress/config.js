@@ -3,6 +3,7 @@ const pluginsConf = require("./config/plugins/index")
 
 module.exports = {
   title: "Gyh's blog",
+  description: "hhh",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],

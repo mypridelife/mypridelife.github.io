@@ -3,7 +3,7 @@ module.exports = {
   noFoundPageByTencent: false,
   smoothScroll: true,
   sidebar: "auto",
-  lastUpdated: "lastUpdated",
+  lastUpdated: "LastUpdated",
   repo: "mypridelife/mypridelife.github.io",
   editLinkText: "Edit on GitHub~",
   // 作者
@@ -11,6 +11,8 @@ module.exports = {
   // 搜索设置
   search: true,
   searchMaxSuggestions: 10,
+  logo: "https://alipub.binfenyingyu.com/file/jpg/67498211979f41a842d23f680c79d5ed.jpg",
+  authorAvatar: "https://alipub.binfenyingyu.com/file/jpg/67498211979f41a842d23f680c79d5ed.jpg",
   nav: [
     { text: "Home", link: "/", icon: "reco-home" },
     { text: "Timeline", link: "/timeline/", icon: "reco-date" },

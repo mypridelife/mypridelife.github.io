@@ -1,10 +1,9 @@
 ---
 home: true
-heroImage: https://alipub.binfenyingyu.com/file/jpg/67498211979f41a842d23f680c79d5ed.jpg
-heroText: Nothing is True. Everything is permitted.
-tagline: 要啥啥没，爱咋咋地
-actionText: 好！很有精神！ →
-actionLink: /web/
+heroText: null
+tagline: null
+bgImage: https://alipub.binfenyingyu.com/file/jpg/67498211979f41a842d23f680c79d5ed.jpg
+bgImageStyle: { height: "350px" }
 features:
   - title:
     details: 年轻时，我会向众生索要他们能力范围之外的：友谊长存，热情不灭。
