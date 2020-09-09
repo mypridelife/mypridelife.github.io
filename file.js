@@ -10,7 +10,7 @@ const oldData = `  module.exports = {
                 {
                     text: "前端",
                     items: [
-                        { text: "js", link: "/web/javascript/JavaScript浮点数运算的精度问题" },
+                        { text: "javascript", link: "/web/javascript/JavaScript浮点数运算的精度问题" },
                         { text: "css", link: "/web/css/移动端适配" },
                         { text: "vue", link: "/web/vue/vue-element-admin" },
                         { text: "其他", link: "/web/others/骚操作" }
