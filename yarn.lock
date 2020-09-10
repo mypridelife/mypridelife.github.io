@@ -1348,6 +1348,13 @@
   dependencies:
     medium-zoom "^1.0.4"
 
+"@vuepress/plugin-medium-zoom@^1.5.4":
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.5.4.tgz#4d47a1adc788f26aca6f60d4d5d573e272266115"
+  integrity sha512-4lK6HmdjyBbWAyYKKGYgIjW7cM8xu/OMTsPwJZQPj/fY1QVVZzy/4FhxSvQDm47JSru6NMQaCQv7DJIdBNA7VQ==
+  dependencies:
+    medium-zoom "^1.0.4"
+
 "@vuepress/plugin-nprogress@1.5.3":
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.5.3.tgz#01c699739ecfe94569986ff838665dcb30e6cb05"
@@ -1576,9 +1583,9 @@ accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
     negotiator "0.6.2"
 
 acorn@^6.2.1:
-  version "6.3.0"
-  resolved "https://registry.npm.taobao.org/acorn/download/acorn-6.3.0.tgz#0087509119ffa4fc0a0041d1e93a417e68cb856e"
-  integrity sha1-AIdQkRn/pPwKAEHR6TpBfmjLhW4=
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
+  integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 agent-base@4, agent-base@^4.3.0:
   version "4.3.0"
@@ -2632,6 +2639,15 @@ clipboard@^2.0.0:
   version "2.0.4"
   resolved "https://registry.npm.taobao.org/clipboard/download/clipboard-2.0.4.tgz#836dafd66cf0fea5d71ce5d5b0bf6e958009112d"
   integrity sha1-g22v1mzw/qXXHOXVsL9ulYAJES0=
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
+
+clipboard@^2.0.4:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.6.tgz#52921296eec0fdf77ead1749421b21c968647376"
+  integrity sha512-g5zbiixBRk/wyKakSwCKd7vQXDjFnAMGHoEyBogG/bw9kTD9GvdAvaoRR1ALcEzt3pVKxZR0pViekPMIS0QyGg==
   dependencies:
     good-listener "^1.2.2"
     select "^1.1.2"
@@ -10376,6 +10392,13 @@ vuepress-plugin-mailchimp@^1.4.1:
   dependencies:
     jsonp "^0.2.1"
     query-string "^6.9.0"
+
+vuepress-plugin-nuggets-style-copy@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-nuggets-style-copy/-/vuepress-plugin-nuggets-style-copy-1.0.3.tgz#3a3bb57c04c7d9ec58afd93ff3db8b6102574bb8"
+  integrity sha512-0v+9i8ZkD0a87nxH/KGioJE6Szeh5ZMBQxRyjEyeUo3B/OSXuuED9ih6+JW2e3LKbsxkza1ZAv8dVXNurKXtFw==
+  dependencies:
+    clipboard "^2.0.4"
 
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
