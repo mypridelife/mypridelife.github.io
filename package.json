@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@vuepress/plugin-medium-zoom": "^1.5.4",
-    "vuepress": "^1.5.3",
+    "vuepress": "^1.5.4",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",
     "vuepress-theme-reco": "^1.5.5"
   },
