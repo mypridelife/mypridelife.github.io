@@ -22,6 +22,12 @@ module.exports = {
     { text: "Home", link: "/", icon: "reco-home" },
     { text: "Timeline", link: "/timeline/", icon: "reco-date" },
     { text: "About", link: "/about/", icon: "reco-message" },
+    {
+      text: "JavaScript高级程序设计第三版",
+      link: "https://mypridelife.github.io/Professional-JavaScript-for-Web-Developers",
+      target: "_blank",
+      icon: "reco-document",
+    },
   ],
   // 博客配置
   blogConfig: {

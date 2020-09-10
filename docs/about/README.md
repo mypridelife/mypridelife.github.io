@@ -1,7 +1,8 @@
 <div v-if="false">
 # about
-[[toc]]
+
 ## 一些使用
+
 ::: tip 提示
 this is a tip
 :::
@@ -14,21 +15,10 @@ this is a tip
 this is a tip
 :::
 
-| Tables        |      Are      |   Cool |
-| ------------- | :-----------: | -----: |
-| col 3 is      | right-aligned | \$1600 |
-| col 2 is      |   centered    |   \$12 |
-| zebra stripes |   are neat    |    \$1 |
+::: details 警告
+this is a tip
+:::
 
-```js{2,4}
-export default {
-  data() {
-    return {
-      msg: "Highlighted!",
-    }
-  },
-}
-```
 
 </div>
 <p>
