@@ -6,6 +6,8 @@ module.exports = {
   lastUpdated: "LastUpdated",
   // 可选，默认为 master
   docsBranch: "reco-dev",
+  // 如果你的文档不在仓库的根部
+  docsDir: "docs",
   repo: "mypridelife/mypridelife.github.io",
   editLinks: true,
   editLinkText: "Edit on GitHub~",
