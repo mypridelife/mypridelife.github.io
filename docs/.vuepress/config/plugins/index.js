@@ -10,4 +10,16 @@ module.exports = {
       visitor: true,
     },
   },
+  "vuepress-plugin-nuggets-style-copy": {
+    copyText: "复制代码",
+    tip: {
+      content: "复制成功!",
+    },
+  },
+  "@vuepress/medium-zoom": {
+    selector: ".theme-reco-content:not(a) img",
+    options: {
+      background: "#fff",
+    },
+  },
 }

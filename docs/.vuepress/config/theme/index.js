@@ -4,15 +4,18 @@ module.exports = {
   smoothScroll: true,
   sidebar: "auto",
   lastUpdated: "LastUpdated",
+  // 可选，默认为 master
+  docsBranch: "reco-dev",
   repo: "mypridelife/mypridelife.github.io",
+  editLinks: true,
   editLinkText: "Edit on GitHub~",
   // 作者
   author: "gyh",
   // 搜索设置
   search: true,
   searchMaxSuggestions: 10,
-  logo: "https://alipub.binfenyingyu.com/file/jpg/67498211979f41a842d23f680c79d5ed.jpg",
-  authorAvatar: "https://alipub.binfenyingyu.com/file/jpg/67498211979f41a842d23f680c79d5ed.jpg",
+  logo: "/logo.svg",
+  authorAvatar: "/avatar.png",
   nav: [
     { text: "Home", link: "/", icon: "reco-home" },
     { text: "Timeline", link: "/timeline/", icon: "reco-date" },
