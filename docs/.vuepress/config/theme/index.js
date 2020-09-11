@@ -1,7 +1,6 @@
 module.exports = {
   type: "blog",
   noFoundPageByTencent: false,
-  smoothScroll: true,
   sidebar: "auto",
   lastUpdated: "LastUpdated",
   // 可选，默认为 master
