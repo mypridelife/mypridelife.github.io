@@ -5,3 +5,4 @@ node_modules/
 thumbs.db
 !.gitkeep
 docs/.vuepress/dist/
+.history
