@@ -472,3 +472,10 @@ document.querySelector('#id-checkbox').addEventListener(
 ### 内存泄露的查询
 
 Chrome浏览器 -> Performance 勾选 Memory -> 录制 -> 会展示Heap占用情况
+
+### 微信支付
+
+https://pay.weixin.qq.com/wiki/doc/api/H5.php?chapter=15_4
+
+
+![支付流程](https://pay.weixin.qq.com/wiki/doc/api/img/chapter15_1.png)
